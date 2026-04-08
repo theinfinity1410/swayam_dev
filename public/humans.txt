@@ -1,0 +1,16 @@
+/* AUTHOR */
+Name: Swayam Gosavi
+Email: swayamgosavi1410@gmail.com
+GitHub: https://github.com/theinfinity1410
+LinkedIn: https://linkedin.com/in/infinity1410
+Location: Pune, India
+
+/* SKILLS */
+Languages: Python, Go, TypeScript, Java, C, C++
+Frameworks: FastAPI, Flask, Gin, Celery, Prisma
+Infrastructure: AWS, Docker, Kubernetes, Terraform, PostgreSQL, Redis, GCP, Azure
+AI/ML: LangChain, LangGraph, HuggingFace, Pinecone, OpenAI API, FAISS
+
+/* SITE */
+Built with: React, Vite, plain CSS
+Last updated: 2026

@@ -1,0 +1,30 @@
+{
+  "name": "swayam_dev",
+  "version": "1.0.0",
+  "description": "My developer portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theinfinity1410/swayam_dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theinfinity1410/swayam_dev/issues"
+  },
+  "homepage": "https://github.com/theinfinity1410/swayam_dev#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.7"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  }
+}
