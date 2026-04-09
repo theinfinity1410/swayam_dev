@@ -657,11 +657,11 @@ function Stats() {
   useEffect(() => {
     const username = CONFIG.stats.leetcodeUsername;
     Promise.all([
-      fetch(`https://alfa-leetcode-api.onrender.com/userProfile/${username}`).then((r) => r.json()).catch(() => null),
+      fetch(`https://leetcode-stats-api.herokuapp.com/${username}`).then((r) => r.json()).catch(() => null),
       fetch(`https://alfa-leetcode-api.onrender.com/${username}/contest`).then((r) => r.json()).catch(() => null),
     ])
       .then(([profile, contest]) => {
-        if (!profile || profile.errors) throw new Error('no profile data');
+        if (!profile || profile.status === 'error') throw new Error('no profile data');
         setLc({
           total: profile.totalSolved ?? 0,
           easy: profile.easySolved ?? 0,
@@ -729,7 +729,7 @@ function Stats() {
                 accent
               />
               <GhMiniCard label="REPOSITORIES" value={gh?.repos ?? '--'} />
-              <GhMiniCard label="TOTAL STARS" value={gh?.stars ?? '--'} />
+              <GhMiniCard label="FOLLOWERS" value={gh?.followers ?? '--'} />
               <GhMiniCard label="TOP LANGUAGE" value={gh?.topLang ?? '--'} />
             </div>
           )}
