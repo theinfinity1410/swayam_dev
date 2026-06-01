@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://hyaena.dev/sitemap.xml
+https://hyaena.dev/sitemap.xml
+https://hyaena.dev/favion.ico
+https://hyaena.dev/favicon.png
+https://hyaena.dev/favicon.svg
+https://hyaena.dev/og-image.png
