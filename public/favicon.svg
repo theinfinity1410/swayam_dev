@@ -1,15 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="4" fill="#0a0a0a"/>
-  <text
-    x="50%"
-    y="54%"
-    dominant-baseline="middle"
-    text-anchor="middle"
-    font-family="monospace"
-    font-size="13"
-    font-weight="400"
-    fill="#4ade80"
-  >
-    &gt;_
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <rect width="256" height="256" fill="#22252A" />
+
+  <path 
+    d="M 186.2 79.1 A 76 76 0 1 0 186.2 176.9" 
+    fill="none" 
+    stroke="#00FF7F" 
+    stroke-width="28" 
+    stroke-linecap="butt" 
+  />
+
+  <g fill="#00FF7F">
+    <rect x="190" y="102" width="28" height="12" />
+    <rect x="190" y="122" width="28" height="12" />
+    <rect x="190" y="142" width="28" height="12" />
+  </g>
 </svg>
