@@ -1323,6 +1323,7 @@ footer {
 
   main {
     padding: 0 20px;
+    overflow-x: hidden;
   }
 
   .about-grid {
@@ -1407,6 +1408,49 @@ footer {
 
   .building-right {
     align-items: flex-start;
+  }
+
+  /* Leetcode stats — prevent horizontal overflow */
+  .stats-col {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .lc-panel {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .lc-top-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .lc-big-num {
+    font-size: 32px;
+  }
+
+  .lc-bar-row {
+    gap: 8px;
+  }
+
+  .lc-bar-label {
+    width: 38px;
+    font-size: 9px;
+  }
+
+  .lc-bar-count {
+    width: 24px;
+    font-size: 9px;
+  }
+
+  .lc-contest-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .lc-contest-val {
+    font-size: 16px;
   }
 }
 
@@ -1907,12 +1951,14 @@ body.cms-edit-mode .cms-entry-controls {
 /* Resume upload (admin only) */
 .cms-resume-upload {
   align-items: center;
-  border-top: var(--border);
+  border: 1px dashed var(--accent-mid);
+  border-radius: 4px;
+  background: var(--accent-11);
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 24px;
-  padding-top: 16px;
+  padding: 16px;
 }
 .cms-resume-info { flex: 1; min-width: 0; }
 .cms-resume-filename {
@@ -2129,7 +2175,12 @@ body.cms-edit-mode footer {
     display: none;
   }
   .social-icons {
-    display: none;
+    display: flex;
+    gap: 8px;
+  }
+  .social-icon-btn {
+    width: 36px;
+    height: 36px;
   }
   .project-entry {
     grid-template-columns: 1fr;
